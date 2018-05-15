@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "kritika",
+    "password": null,
+    "database": "notes-dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "kritika",
+    "password": null,
+    "database": "notes-test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "kritika",
+    "password": null,
+    "database": "notes-prod",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

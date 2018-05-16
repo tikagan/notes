@@ -8,7 +8,7 @@ class Note extends Component {
   //   incrementAsync: PropTypes.func.isRequired,
   //   decrement: PropTypes.func.isRequired,
   //   counter: PropTypes.number.isRequired
-  };
+  // };
 
   render() {
     return (

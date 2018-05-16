@@ -32,28 +32,34 @@ module.exports = {
     })
   ],
   module: {
-    loaders: [{
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
-    }, {
-      test: /\.json?$/,
-      loader: 'json-loader'
-    }, {
-      test: /\.global\.css$/,
-      loaders: [
-        'style-loader',
-        'css-loader'
-      ]
-    }, {
-      test: /^((?!\.global).)*\.css$/,
-      loaders: [
-        'style-loader',
-        'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
-      ]
-    }, {
-      test: /\.(png|jpg)$/,
-      loader: 'file-loader'
-    }]
-  }
-};
+      loaders: [{
+        test: /\.js?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options:{
+          presets: ['env', 'react']
+        }
+      }, {
+        test: /\.json?$/,
+        loader: 'json-loader'
+      }, {
+        test: /\.global\.css$/,
+        loaders: [
+          'style-loader',
+          'css-loader'
+        ]
+      }, {
+        test: /^((?!\.global).)*\.css$/,
+        loaders: [
+          'style-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+        ]
+      }{
+        test: /^((?!\.global).)*\.css$/,
+        loaders: [
+          'style-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+        ]
+      }]
+    }
+  };

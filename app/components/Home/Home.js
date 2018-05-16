@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import styles from './Home.css';
+// import styles from './Home.css';
 import NoteList from '../NoteList/NoteList'
 import Note from '../Note/Note'
 
